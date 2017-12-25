@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/openCustomGallery"
+        android:layout_margin="5dp">
+
+        <!--  Grid View to display Selected Images-->
+        <include
+            android:id="@+id/selectedImagesGridView"
+            layout="@layout/gridview_layout" />
+    </RelativeLayout>
+
+    <!-- Button to Open Custom gallery -->
+    <Button
+        android:id="@+id/openCustomGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ADD8E6"
+        android:text="@string/openCustomGallery"
+        android:textColor="#009688"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
